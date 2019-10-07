@@ -24,6 +24,7 @@ Route::get('{slug_cate}.html','frontend\IndexController@GetPrdCate');
 Route::get('filter','frontend\IndexController@GetFilter');
 //Cart
 Route::group(['prefix' => 'cart'], function () {
+    Route::get('all', 'frontend\cartController@getAll');
     Route::get('', 'frontend\cartController@getCart');
     Route::get('add','frontend\CartController@addCart');
     Route::get('update/{rowId}/{qty}','frontend\CartController@updateCart');

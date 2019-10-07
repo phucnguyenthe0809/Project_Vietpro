@@ -23,6 +23,7 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custome.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
 

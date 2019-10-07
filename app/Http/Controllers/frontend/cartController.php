@@ -42,4 +42,9 @@ class cartController extends Controller
         Cart::remove($rowId);
         return redirect()->back();
     }
+
+    function getAll()
+    {
+      return Cart::content();
+    }
 }
